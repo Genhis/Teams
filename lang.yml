@@ -1,0 +1,49 @@
+player:
+  team:
+    help:
+      admin:
+        disband: Zruseni hracskeho tymu
+      create: Vytvoreni noveho tymu
+      disband: Zruseni vlastniho tymu
+      invite: Pozvani hrace do vasho tymu
+      uninvite: Zruseni pozvanky pro hrace
+      kick: Vyhozeni hrace z tymu
+      join: Pripojeni se do tymu
+      leave: Opusteni tymu
+      chat: Prepinani medzi normalnim a tymovym chatem
+      next_page: Dalsi strana
+    chat:
+      true: Vstoupil jsi do tymoveho chatu
+      false: Opustil jsi tymovy chat
+    create_success: Uspesne jsi zalozil team!
+    
+    disband: Tvuj tym byl rozpusten!
+    
+    invite_player: Hrac %owner te pozval do tymu %team. Pro pripojeni napis /team join %team
+    invite_player_sender: Uspesne jsi pozval hrace %player do tymu!
+    invite_player_error: Tenhle hrac je jiz pozvan nebo je v tymu!
+    
+    uninvite_player: Hrac %owner zrusil pozvanku do tymu %team.
+    uninvite_player_sender: Uspesne jsi zrusil pozvani pro hrace %player!
+    uninvite_player_error: Tenhle hrac neni pozvan!
+    
+    kick_player: Byl jsi vyhozen z tymu %team hracem %owner!
+    kick_player_team: Hrac %player byl vyhozen z tymu!
+    kick_player_error: Tenhle hrac neni v tymu!
+    player_left: Hrac %player opustil tym!
+    
+    join_no_invitation: Nejsi pozvan do tohto tymu!
+    join: Hrac %player se pripojil do tymu!
+    
+    player_already_chatspy: Jiz mas zaple spehovani tymoveho chatu!
+    player_success_chatspy: Uspesne jsi zapnul spehovani tymoveho chatu!
+    player_no_chatspy: Nemas zaple spehovani tymoveho chatu!
+    player_disable_chatspy: Uspesne jsi vypnul spehovani tymoveho chatu!
+    
+    team_already_exists: Tym uz existuje, zvol jiny nazev
+    too_short_name: Prilis kratky nazev pro tym
+    already_in_team: Jiz jsi v tymu!
+    no_team: Tym neexistuje!
+    no_owner: Nejsi vlastnikem tymu!
+
+file_version: 1.0

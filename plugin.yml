@@ -1,0 +1,75 @@
+name: Teams
+description: Team chat for players
+author: Genhis
+webside: http://genhis.6f.sk/
+depend: [GLib, TagAPI]
+main: sk.genhis.teams.Teams
+version: 0.2
+commands:
+  team:
+    usage: /<command> help
+    permission: teams.team
+    permission-message: You don't have permission for this!
+permissions:
+  teams.*:
+    children:
+      teams.team: true
+      teams.team.*: true
+  teams.team:
+    default: op
+  teams.team.*:
+    children:
+      teams.team.help: true
+      teams.team.help.*: true
+      teams.team.info: true
+      teams.team.info.*: true
+      teams.team.create: true
+      teams.team.disband: true
+      teams.team.disband.*: true
+      teams.team.invite: true
+      teams.team.uninvite: true
+      teams.team.kick: true
+      teams.team.join: true
+      teams.team.leave: true
+      teams.team.chat: true
+      teams.team.chatspy: true
+      teams.team.colorednames: true
+  teams.team.help:
+    default: op
+  teams.team.help.*:
+    children:
+      teams.team.help.admin: true
+  teams.team.help.admin:
+    default: op
+  teams.team.create:
+    default: op
+  teams.team.info:
+    default: op
+  teams.team.info.*:
+    children:
+      teams.team.info.other: true
+  teams.team.info.other:
+    default: op
+  teams.team.disband:
+    default: op
+  teams.team.disband.*:
+    children:
+      teams.team.disband.other: true
+  teams.team.disband.other:
+    default: op
+  teams.team.invite:
+    default: op
+  teams.team.uninvite:
+    default: op
+  teams.team.kick:
+    default: op
+  teams.team.join:
+    default: op
+  teams.team.leave:
+    default: op
+  teams.team.chat:
+    default: op
+  teams.team.chatspy:
+    default: op
+  teams.team.colorednames:
+    default: op
